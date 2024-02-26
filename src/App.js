@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/home/Home';
+import About from './components/About/About';
+import Media from './components/Media/Media';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Purchase from './components/Puchase/Purchase';
+import Community from './components/Community/Community';
+import News from './components/News/News';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ParallaxProvider scrollAxis="horizontal">
+<Header/>
+<Home/>
+<About/>
+<Media/>
+<News/>
+<Purchase/>
+<Community/>
+</ParallaxProvider>
   );
 }
 

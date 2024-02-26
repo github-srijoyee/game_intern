@@ -1,0 +1,39 @@
+
+
+.navbar{
+    background-color: black;
+}
+.navbar-brand{
+    font-size: 3rem;
+    object-fit: cover;
+    color: #fff;
+}
+
+.dropdown-item{
+    font-family: "Anta",sans-serif;
+}
+
+nav ul li{
+    padding-right: 1.5rem;
+    
+}
+
+.navbar-nav .nav-link{
+    font-family: "Anta", sans-serif;
+    color:#fff;
+}
+.navbar-nav .nav-link:hover{
+    background-color: grey;
+    border-radius: 2rem;
+}
+.navbar .btn{
+    font-family: "Anta", sans-serif;
+}
+.navbar-nav .nav-link .active{
+    color:aliceblue;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    border-radius: 10px;
+  }

@@ -1,0 +1,205 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+.com-img{
+    width: 100%;
+    padding-top: 5rem;
+}
+.headline2 {
+    font-family: "Anta",sans-serif;
+    font-size: 40px;
+    color: #0d0d50; /* Adjust text color as needed */
+    font-weight: 700;
+    z-index: 1;
+    transform: translate(-20%, -600%);
+    top: 50%;
+    right: 50%;
+}
+.headline3{
+    font-family: "Anta",sans-serif;
+    font-size: 20px;
+    color: #0d0d50; /* Adjust text color as needed */
+    font-weight: 700;
+    top: 50%;
+    right: 50%;
+    text-align: center;
+    transform: translate(-20%, -1000%);
+    z-index: 1;
+}
+.headline4{
+    font-family: "Anta",sans-serif;
+    font-size: 20px;
+    color: aliceblue; /* Adjust text color as needed */
+    font-weight: 700;
+    top: 15rem;
+    left: 2rem;
+    text-align: center;
+    transform: translate(-38.5%, -1000%);
+    z-index: 1;
+    margin-left: 9rem;
+}
+.headline6{
+    font-family: "Anta",sans-serif;
+    font-size: 15px;
+    color: aliceblue; /* Adjust text color as needed */
+    font-weight: 700;
+    top: 15rem;
+    right: 2rem;
+    display: block;
+    text-align: center;
+    transform: translate(-10%, -1000%);
+    z-index: 1;
+}
+.stamp{
+    display: block; 
+    position: absolute;
+right: 2rem;
+z-index: 9999;
+transform: translate(-10%, -200%);
+}
+.headline5{
+    font-family: "Anta",sans-serif;
+    font-size: 20px;
+    color: aliceblue; /* Adjust text color as needed */
+    font-weight: 500;
+    top: 10rem;
+    left: 2rem;
+    text-align: center;
+    transform: translate(15%, -800%);
+    z-index: 1;
+    padding-right: 2rem;
+    cursor:pointer;
+}
+
+.footer-link{
+    color: aliceblue;
+    text-decoration: none;
+}
+.footer-link1{
+    position:absolute;
+left: 3rem;
+z-index: 9999;
+transform: translate(-10%, -200%);
+font-size: 4rem;
+color: aliceblue;
+}
+.com-link{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-tab{
+    display: flex;
+}
+.headlines{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon{
+    display: flex;
+}
+.headlines{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+.content .a1{
+    font-family: "Anta",sans-serif;
+    border: 2px solid black;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: none;
+    padding-left:2rem;
+    padding-right:2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    transform: translate(-230%, -380%);
+    z-index: 1;
+    margin-left: 1rem;
+}
+.footer-icon2{
+    display: none;
+}
+.headline7{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .headline3{
+        display: none;
+    }
+    .headline2{
+        display: none;
+    }
+    .com-img{
+        display: none; /* Hide the image on smaller screens */
+    }
+    .stamp{
+        display: none;
+    }
+    .a1{
+        display: none;
+    }
+    .headline4{
+        display: none;
+    }
+    .footer-tab{
+        display: none;
+    }
+    .headline5{
+        width: 100%;
+    }
+    .footer-link1{
+        display:none;
+    }
+    .footer-icon{
+        display:none;
+    }
+    .headline6{
+        display:none;
+    }
+    .footer-icon2{
+        padding-top: 9rem;
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        z-index: 9999;
+        width:100%;
+    }
+    .headline7 {
+        width: 100%;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        font-family: "Anta", sans-serif;
+        position: absolute;
+        left: 0; /* Adjust as needed */
+        padding-top: 6rem;
+        z-index: 9999;
+        color: white;
+    }
+    
+    .headline8{
+        font-size: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* Media query to adjust layout after the purchase form for smaller screens */
+@media screen and (max-width: 768px) {
+    .content .a1 {
+        transform: none; /* Remove any translations applied */
+        margin-left: 0; /* Reset margin */
+        width: 100%; /* Make the button occupy full width */
+    }
+}

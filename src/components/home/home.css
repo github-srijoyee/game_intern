@@ -1,0 +1,102 @@
+
+.hero {
+    font-family: "Anta", sans-serif;
+    width: 100%;
+    height: 100vh; /* Adjusted height to viewport height */
+    background-color: white; /* Changed background color to black */
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+.content {
+    text-align: center;
+    padding-bottom: 20vh;
+}
+
+.content h1 {
+    padding-top: 25vh;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.home-btn {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.back-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.9;
+    object-fit: cover; 
+    overflow: hidden;
+    /*border-radius: 2rem;*/
+  
+}
+
+@media screen and (max-width:768px) {
+    .content h1 {
+        padding-top: 20vh;
+        font-size: 50px;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+
+    }
+    .content a {
+        border: 2px solid black;
+        font-size: 30px;
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+        padding: 6px 14px;
+    }
+    .back-video {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:576px) { /* Adjusted the breakpoint */
+    .content {
+        padding-bottom: 4vh;
+    }
+    .content h1 {
+        padding-top: 35vh;
+        font-size: 40px;
+        -webkit-text-stroke: 2px cornflowerblue;
+        color: transparent;
+    }
+    .content a {
+        border: 2px solid cornflowerblue;
+        font-size: 15px;
+        -webkit-text-stroke: 2px cornflowerblue;
+        color: transparent;
+    }
+    .back-video {
+        padding-left: 2vh;
+        padding-right: 2vh;
+        padding-top: 2vh;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        border-radius: 2rem;
+    }
+}
